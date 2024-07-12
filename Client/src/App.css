@@ -1,0 +1,514 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height:100vh;
+}
+
+.navbar{
+    background-color: rgb(20,20,20);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.navbar header{
+    .Home{
+        text-decoration:none;
+        color: inherit;
+    }
+    .logo{
+        background-color: orange;
+        color:#000;
+        border: 3px solid orange;
+        border-radius: 4px;
+        margin: 5px;
+        width: 140px;
+        height:25px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        font-weight: bolder;
+    }
+}
+
+.navbar header .search-bar{      
+    display: flex;
+    border: 3px solid white;
+    margin: 5px;
+    border-radius: 8px;
+    width: 600px;
+    height:25px;
+    background-color: white;      
+    .dropdown{
+        border:none;
+        border-radius: 4px 0px 0px 4px;
+        width: 158px;
+        outline: none;      
+        font-size: 100%;
+    }
+    .search-input{
+        background-color: white;
+        font-size: 100%;
+        border: none;
+        border-left: 2px solid black;
+        border-radius:0px  4px 4px 0px;
+        outline: none;
+        width: 100%;      
+        padding: 3px 0px 0px 8px;
+    }
+}
+
+.navbar header .user .button{
+    background-color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin: 5px;
+    height:29px;
+    font-size: 1em;
+}
+
+.main{
+    display:flex;
+    justify-content: space-evenly;
+    color: #fff;
+    background-color: rgba(6, 6, 6);
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 16px;
+        margin:15px;
+    }
+}
+
+.main .container .movie{
+    width: 180px;
+    height: 420px;
+    background-color: #1a1a1a;
+    border:none;
+    border-radius:  10px;
+    overflow:hidden;
+}
+
+.main .container .movie .movie-poster{
+    height:270px;
+    img{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.main .container .movie .review{   
+    display: flex;
+    align-items:end;
+    padding-left: 5px;
+    height:35px;
+    .star{
+        color: orange;
+        font-size: 1.2em;;
+        padding-bottom:4px;
+    }
+    .rating{
+        font-size: 1.1em;;
+        padding: 3px;
+    }
+}
+.main .container .movie .review .give{
+    padding:0px 0px 1px 65px;
+    button{
+        background-color:transparent;
+        border:none;
+        color:#0096ff;
+        font-size: 1em;
+        .star{
+            color:#0096ff;
+        }
+    }
+    button:hover{
+        background-color: #343434;
+        border-radius: 4px;
+        color:white;
+
+    }
+}
+
+.main .container .movie .title{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    font-size: 0.95em;
+    height:45px;
+    padding: 0px 5px 5px 4px;
+}
+
+.main .container .movie .text{
+    text-decoration: none;
+    .trailer{
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        height:35px;
+        padding-left:5px;
+        padding-right:5px;
+        text-decoration: none;
+        button{
+            width:100%;
+            height:100%;
+            border:none;
+            border-radius: 15px;
+            background-color: #343434;
+            font-size:1em;
+            color: #0096ff;
+        }
+    }
+}
+
+.main .container .movie .more{
+    text-align: center;
+    padding-top:10px;
+    font-size: 0.8em;
+    a{
+        color:white;
+    }
+}
+
+.Signin{
+    background-color: beige;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+}
+
+.Signin .Spark{
+    background-color: white;
+    width: 450px;
+    height:450px;
+    text-align: center;
+    margin:40px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        font-size: 2.5em;
+        margin-top: 5px;
+    }
+    .userinput{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        .username{
+            width:300px;
+            height:40px;
+            border:1px solid black;
+            margin:8px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            padding-left:10px;
+            background-color: #e8f0ff;
+        }
+        .signin_submit{
+            width:90px;
+            height:40px;
+            border:none;
+            background-color: orange;
+            border-radius: 10px;
+            font-size: 1em;
+            margin-left: 120px;
+            margin-top: 8px;
+        }
+    }
+
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 50px;
+      }
+      
+      .separator::before,
+      .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #000;
+        margin: 0 20px;
+      }
+      
+      .separator span {
+        display: inline-block;
+        
+        color: #000;
+        background: #fff; 
+    }
+      
+    .createacc{
+        width:310px;
+        height:44px;
+        border:none;
+        border-radius: 10px;
+        background-color: orange;
+        font-weight:bold;
+        font-size: 1.1em;
+    }
+
+}
+
+.Signup{
+    background-color: beige;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .Home{
+        text-decoration:none;
+        color: inherit;
+        .logo{
+            background-color: orange;
+            width:200px;
+            height:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            margin-top:20px;
+            font-size: 1.4em;
+        }
+    }
+}
+
+.Signup .Signupcon{
+    background-color: white;
+    width: 400px;
+    height:450px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h2{
+        margin: 10px 0pc 15px 0px;
+        text-align: left;
+        font-size: 2em;
+    }
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+        padding-right:19px;
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 1em;
+        }
+    }
+    .signup-btn {
+        background-color: orange;
+        border: none;
+        margin-top:5px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        width:100%;
+        font-weight: bolder;
+    }
+}
+
+.moviecon{
+    background-color: black;
+    color:#fff;
+    display:flex;
+    justify-content: space-evenly;
+    .moviebox{
+        background-color: #1a1a1a;
+        display:flex;
+        flex-direction: column;
+        border-radius:15px;
+        width:1160px;
+        margin:20px;
+    }
+}
+
+.moviecon .moviebox .details{
+    display:flex;
+    .poster img{
+        width:350px;
+        height:525px;
+        margin:20px 20px 10px 20px;
+        border-radius: 10px;
+    }
+    .info{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.6em;
+        .movie-title{
+            font-size: 2.5em;
+            font-weight: bolder;
+            margin: 25px 0px;
+            
+        }
+        .detail-element{
+            color: rgba(255,255,255,0.5);
+            padding :5px;
+            display:flex;
+            align-items: center;
+            .star{
+                color:orange;
+                font-size: 1.1em;
+                padding-bottom:7px;
+            }
+            .rate-now{
+                background-color: orange;
+                border:none;
+                border-radius:5px;
+                font-weight: bolder;
+                border: 5px solid orange;
+            }
+            .names{
+                color:white;
+            }
+        }
+
+    }
+}
+
+.moviecon .moviebox .comments{
+    display:flex;
+    flex-direction: column;
+    .comment{
+        background-color: #343434;
+        border-radius: 5px;
+        margin:10px 20px;
+        word-wrap: break-word;
+        white-space: normal;
+        .usercon{
+            display: flex;
+            justify-content: space-between;
+            .userrate{
+                font-size: 1em;
+                padding:8px;
+                color:rgba(256,256,256,0.5);
+                font-weight: bolder;
+                .ratee{
+                    font-size: 1em;
+                    color:orange;
+                }
+                .newrating{
+                    outline: none;
+                    border: none;
+                    height: 25px;
+                    border-radius: 5px;
+                    padding-left: 19px;
+                }
+            }
+            .submitcon{
+                button{
+                    height: 30px;
+                    width: 80px;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    border: none;
+                    margin: 8px;
+                }
+            }
+        }
+        .usercom{
+            color:rgba(256,256,256);
+            font-size: 1.1em;
+            padding:0px 10px 10px;
+            .newcomment{
+                width: 98.5%;
+                border-radius: 10px;
+                padding: 10px 0px 0px 15px;
+
+            }
+        }
+    }
+}
+.reviewcon{
+    display:flex;
+    justify-content: center;
+    .userreviews{
+        margin:15px;
+        background-color: #1a1a1a;
+        width:1100px;
+        border-radius:15px;
+        .reviews{
+            display:flex;
+            flex-direction: column;
+            color:white;
+            .userreview{
+                background-color: #343434;
+                border-radius: 5px;
+                margin:10px 20px;
+                word-wrap: break-word;
+                white-space: normal;
+                .usercont{
+                    display: flex;
+                    justify-content: space-between;
+                    .userrate{
+                        font-size: 1em;
+                        padding:8px;
+                        color:rgba(256,256,256,0.5);
+                        font-weight: bolder;
+                        .ratee{
+                            font-size: 1em;
+                            color:orange;
+                        }
+                        .ratinginput{
+                            margin:5px;
+                        }
+                    }
+                    input{
+                        margin:5px;
+                    }
+                    .buttons{
+                        padding:15px 15px 0px 0px;
+                        button{
+                            margin:0px 3px;
+                            border-radius: 5px;
+                            border:none;
+                            height: 30px;
+                            width: 60px;
+                            font-weight: bold;
+                        }
+                    }
+                    .commentinput{
+                        margin:10px;
+                    }
+                }
+
+                .comment{
+                    color:rgba(256,256,256);
+                    font-size: 1.1em;
+                    padding:0px 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+
