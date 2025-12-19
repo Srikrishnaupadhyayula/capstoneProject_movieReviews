@@ -20,7 +20,7 @@ The application supports **searching, filtering, and sorting** movies based on r
 ---
 
 ## **Implementation**
-<!-- Add screenshots or demo images here if available -->
+![Website Screenshot](https://github.com/Arjay1311/Portfolio-Website/blob/main/public/images/Project-1.png)
 
 ---
 
